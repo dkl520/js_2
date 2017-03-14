@@ -3,7 +3,11 @@
 
 	<head>
 		<meta charset="utf-8">
+		
 		<title>IFE JavaScript Task 01</title>
+		<style type="text/css">
+			[v-cloak]{ display: none;}
+		</style>
 	</head>
 
 	<body>
@@ -14,7 +18,7 @@
 				<!--   
     <li>第一名：福州（样例），10</li>
       <li>第二名：福州（样例），10</li> -->
-	<li v-for='(value,index) in aqiDatas'> 第{{index+1}}名  {{value[0]}} {{value[1]}}</li>
+	<li v-for='(value,index) in aqiDatas' v-cloak> 第{{index+1}}名  {{value[0]}} {{value[1]}}</li>
 			</ul>
 		</div>
 		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
