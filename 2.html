@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--<script type="text/javascript">
+			var arrSimple = [1, 8, 7, 6, 10];
+			arrSimple.sort((a, b) => b - a);
+			document.write(arrSimple.join());
+		</script>-->
+		<script type="text/javascript">
+			var arr = [
+				[1, 2, 3],
+				[7, 2, 3],
+				[3, 2, 3]
+			];
+
+//			arr.sort(function(x, y) { return x[0]– y[0] });
+			arr.sort(function(x, y) { return x[0] - y[0] }); //按每个数组的第一个元素的大小来排序；x,y分别是相邻的两个数组元素如[1,2,3],[7,2,3]；函数是自定义的，所以还是很灵活的
+			for(var i in arr)
+				console.log(arr[i]);
+			//		console.log(arr.join());
+		</script>
+		<!--<script type="text/javascript">
+			var arr = [
+				[1, 2, 3],
+				[7, 2, 3],
+				[3, 2, 3]
+			];
+			//			for(var i in arr) console.log(arr[i]);
+			for(var i in arr)
+				console.log(arr[i]); //可以看到变化
+		</script>-->
+	</body>
+
+</html>
